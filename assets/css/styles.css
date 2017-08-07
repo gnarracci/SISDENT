@@ -1,0 +1,497 @@
+/*--------------------
+	INIT RESET
+--------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*--------------------
+	PAGE SETTINGS
+--------------------*/
+body{
+	background: #fff;
+	padding: 0px;
+}
+
+.container{
+	width: 90%;
+	max-width: 1024px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*--------------------------
+	   FONTS SOURCE
+--------------------------*/
+@font-face{
+	font-family: 'BebasNeuewebfont';
+	src:url('../fonts/BebasNeuewebfont.eot');
+	src:local('BebasNeuewebfont'),url('../fonts/BebasNeuewebfont.woff') format('woff'),url('../fonts/BebasNeuewebfont.ttf') format('truetype');
+}
+
+/*-------------------------
+	     HEADER
+-------------------------*/
+#logo{
+	padding: 0;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	height: auto;
+	z-index: 1;
+}
+
+
+#logo-2{
+	padding: 0;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	height: auto;
+	z-index: ;
+}
+
+nav{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	background-color: #40bcca;
+	color: #fff;
+	font-family: 'Helvetica', Arial;
+	height: auto;
+	margin-top: -5px;
+	z-index: 2;
+}
+
+nav #greeting{
+	font-size: 33px;
+	margin-left: 510px;
+	font-family: 'BebasNeuewebfont', Arial;
+}
+
+/*- Menu 1 Image-*/
+#menu-1{
+	position: fixed;
+	clear: both;
+	left: 163px;
+	top: 0px;
+	z-index: 3;
+}
+/*- Menu 1 Links -*/
+#menu{
+	font-family: "Helvetica", Arial;
+	position: fixed;
+	margin-left: 36px;
+	margin-top: -175px;
+	max-width: 235px;
+	z-index: 4;
+}
+
+ul.main{
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+	width: 235px;
+}
+
+ul.main li a{
+	color: #484848;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+
+ul.line{
+	color: #484848;
+}
+
+ul.main li:hover{
+	cursor: pointer;
+	background: rgba(77,201,214,0.2);
+}
+
+/*-----------------------
+	   SECTION ONE
+-----------------------*/
+#sec-1{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	margin-top: -1px;
+	height: auto;
+}
+
+/*-----------------------
+	  SECTION TWO
+-----------------------*/
+#sec-2{
+	width: 100%;
+	margin-top: -5px;
+	max-width: 1024px;
+	min-width: 180px;
+	height: auto;
+}
+
+/*-----------------------
+	  SECTION THREE
+-----------------------*/
+#sec-3{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	margin-top: -5px;
+	height: auto;
+}
+
+#menu-2{
+	position: absolute;
+	clear: both;
+	left: 745px;
+	top: 1607px;
+	z-index: 11;
+}
+/*- Menu 2 Links -*/
+#menu2{
+	font-family: "Helvetica", Arial;
+	position: absolute;
+	float: left;
+	margin-left: 707px;
+	margin-top: -290px;
+	z-index: 14;
+}
+
+ul.second{
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+	width: 190px;
+}
+
+ul.second li a{
+	color: #484848;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+
+ul.line{
+	color: #484848;
+}
+
+ul.second li:hover{
+	cursor: pointer;
+	background: rgba(77,201,214,0.2);
+}
+
+/*-----------------------
+	  SECTION FOUR
+-----------------------*/
+#sec-4{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	margin-top: -5px;
+	height: auto;
+}
+
+/*-----------------------
+		 FOOTER
+-----------------------*/
+footer{
+	background-color: #40bcca;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 180px;
+	margin-top: -7px;
+	font-family: "Bebas Neue", Arial;
+	height: auto;
+}
+
+footer #white{
+	margin-left: 605px;
+	width: 40%;
+	height: auto;
+}
+
+#address{
+	color: #fff;
+	float: left;
+	height: auto;
+	margin-left: 45px;
+	margin-top: -68px;
+	position: absolute;
+	font-weight: bold;
+	text-align: left;
+	width: 55%;
+	z-index: 10;
+}
+
+#adr{
+	font-family: 'BebasNeuewebfont', Arial;
+}
+
+#mail{
+	font-family: 'BebasNeuewebfont', Arial;
+}
+
+/*---------------------------
+	MENU HIDDEN TEETH
+----------------------------*/
+@media (max-width: 1025px) {
+	#menu-1{
+		opacity: 0;
+		display: none;
+	}
+	#menu{
+		opacity: 0;
+	}
+}
+
+
+@media (max-width: 1025px) {
+	#menu-2{
+		display: none;
+	}
+	#menu2{
+		opacity: 0;
+	}
+}
+/*---------------------------
+	FONT SIZE RESPONSIVE
+---------------------------*/
+
+/*- Under 1250px */
+@media screen and (max-width: 1250px) {
+	nav #greeting{
+		font-size: :26px;
+	}
+}
+/* Under 1100px */
+@media screen and (max-width: 1100px) {
+	nav #greeting{
+		font-size: 25px;
+	}
+}
+/* Under 980px */
+@media screen and (max-width: 980px) {
+	nav #greeting{
+		font-size: 22px;
+		margin-left: 450px;
+	}
+}
+/* Under 800px */
+@media screen and (max-width: 800px) {
+	nav #greeting{
+		font-size: 19px;
+		margin-left: 410px;
+	}
+}
+
+/*--------------------------------
+	     COVER TOTAL PAGE
+---------------------------------*/
+@media screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+	}
+}
+/*--------------------------------
+       FOOTER RESPONSIVE
+--------------------------------*/
+/*- Under 1250px */
+@media screen and (max-width: 1250px) {
+	footer{
+		font-size: 22px;
+	}
+	footer #white{
+		width: 35%; 
+		margin-left: 570px;
+	}
+}
+
+/*- Under 1100px */
+@media screen and (max-width: 1100px) {
+	footer{
+		font-size: 18px;
+	}
+	footer #white{
+		width: 30%; 
+		margin-left: 540px;
+	}
+	#address{
+		margin-top: -53px;
+	}
+}
+/*- Under 980px */
+@media screen and (max-width: 980px) {
+	footer{
+		font-size: 16px;
+	}
+	footer #white{
+		width: 25%; 
+		margin-left: 510px;
+	}
+	#address{
+		margin-top: -42px;
+	}
+}
+/*- Under 800px */
+@media screen and (max-width: 800px) {
+	footer{
+		font-size: 13px;
+	}
+	footer #white{
+		width: 23%; 
+		margin-left: 480px;
+	}
+	#address{
+		margin-top: -36px;
+	}
+}
+/*- Under 680px */
+@media screen and (max-width: 680px) {
+	footer{
+		font-size: 11px;
+	}
+	footer #white{
+		width: 21%; 
+		margin-left: 450px;
+	}
+	#address{
+		margin-top: -30px;
+	}
+}
+/*- Under 590px */
+@media screen and (max-width: 590px) {
+	footer{
+		font-size: 8px;
+	}
+	footer #white{
+		width: 19%; 
+		margin-left: 320px;
+	}
+	#address{
+		display: none;
+	}
+}
+/*- Under 440px */
+@media screen and (max-width: 440px) {
+	footer{
+		font-size: 7px;
+	}
+	footer #white{
+		width: 15%; 
+		margin-left: 300px;
+	}
+	#address{
+		display: none;
+	}
+}
+/*- Under 400px */
+@media screen and (max-width: 400px) {
+	footer{
+		font-size: 6px;
+	}
+	footer #white{
+		width: 13%; 
+		margin-left: 235px;
+	}
+	#address{
+		display: none;
+	}
+}
+/*- Under 320px */
+@media screen and (max-width: 320px) {
+	footer{
+		font-size: 9px;
+	}
+	footer #white{
+		width: 11%; 
+		margin-left: 200px;
+	}
+	#address{
+		display: none;
+	}
+}
+/*---------------------------------
+	  MENU RESIZING OPTIONS
+---------------------------------*/
+@media screen and (max-width: 1026px) {
+	nav #greeting{
+		display: none;
+	}
+}
+
+@media (max-width: 2032px) and (min-width: 1025px) {
+	#rps{
+		display: none;
+	}
+}
+
+@media (max-width: 2032px) and (min-width: 1025px) {
+	#logo-2{
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 320px) {
+	#logo{
+		display: none;
+	}
+}
+
+/*--------------------------------------*/
+@media screen and (max-width: 1920px) {
+	#menu-1{
+		left: 448px;
+	}
+	#menu-2{
+		left: 1034px;
+	}
+}
+@media screen and (max-width: 1680px) {
+	#menu-1{
+		left: 328px;
+	}
+	#menu-2{
+		left: 908px;
+	}
+}
+@media screen and (max-width: 1600px) {
+	#menu-1{
+		left: 288px;
+	}
+	#menu-2{
+		left: 870px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	#menu-1{
+		left: 208px;
+	}
+	#menu-2{
+		left: 796px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	#menu-1{
+		left: 163px;
+	}
+	#menu-2{
+		left: 740px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	#menu-1{
+		left: 128px;
+	}
+	#menu-2{
+		left: 711px;
+	}
+}
+
